@@ -23,7 +23,7 @@ Frontend: React.js (Vite) with Axios for HTTP requests.
 
 Backend: Django REST Framework for API and authentication.
 
-Database: SQLite (lightweight and built-in for development).
+Database: SQLite 
 
 Authentication: JSON Web Token (JWT) for secure login.
 
@@ -55,7 +55,7 @@ Quick start (Linux / WSL / macOS)
    #Configure PostgreSQL in pm_backend/settings.py or set DATABASE_URL env var
    -Migrate database: python manage.py migrate
    
-   -Create superuser: python manage.py createsuperuser  # create admin (is_staff)
+   -Create superuser: python manage.py   # create admin (is_staff)
    
    -python manage.py loaddata sample_data.json
    
