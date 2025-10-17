@@ -1,14 +1,33 @@
 
-Project Management App — React + Django + PostgreSQL
+Project Management App 
 ===================================================
 
-Contents
+Project Overview
 --------
-- backend/    -> Django REST API (pm_backend)
-- frontend/   -> React app (created with Vite)
-- README contains instructions to run locally.
+The Web-Based Project Management System is a complete solution to manage organizational
+projects online. It replaces manual Excel sheets by allowing admins and employees to collaborate
+in real time, track deadlines, update task progress, and record delay remarks through a web
+interface.
+
+Objectives
+--------
+1 Provide a simple yet powerful online dashboard for tracking projects.
+2 Allow Admins to manage and assign projects.
+3 Allow Employees to update project completion and delay remarks.
+4 Replace manual Excel updates with real-time data synchronization.
+5 Enable export of project data in CSV format for reporting.
+
+Technology Stack
+--------
+Frontend: React.js (Vite) with Axios for HTTP requests.
+Backend: Django REST Framework for API and authentication.
+Database: SQLite (lightweight and built-in for development).
+Authentication: JSON Web Token (JWT) for secure login.
+Libraries Used: reportlab, dj-database-url, corsheaders, djangorestframework-simplejwt.
+
 
 High-level features implemented
+--------
 - JWT authentication (djangorestframework-simplejwt)
 - Admin & Employee roles (Django is_staff marks Admin)
 - Project model: fields per assignment (employee, project_name, customer, priority, quantity, subtask, remarks, due_date, completion, delay, delay_remarks)
@@ -16,35 +35,25 @@ High-level features implemented
 - Excel/CSV export endpoint.
 - React frontend with login, employee dashboard (update tasks), and admin dashboard (view all tasks in table, filter, export CSV).
 
-Important notes
-- This package is a functional skeleton to submit as your assignment. For production, extra hardening, validation, and UI polish are recommended.
-- Database: PostgreSQL is recommended. Settings in backend/README show how to configure. If you don't have PostgreSQL, the backend defaults to SQLite for quick testing.
-
 Quick start (Linux / WSL / macOS)
 --------------------------------
 1. Backend
    cd backend
-   python3 -m venv venv
-   source venv/bin/activate
-   pip install -r requirements.txt
+   Create virtual environment: python3 -m venv venv
+   Activate it: .\venv\Scripts\Activate.ps1
+   Install packages: pip install -r requirements.txt
+   Make migrations: python manage.py makemigrations projects
    # Configure PostgreSQL in pm_backend/settings.py or set DATABASE_URL env var
-   python manage.py migrate
-   python manage.py createsuperuser  # create admin (is_staff)
+   Migrate database: python manage.py migrate
+   Create superuser: python manage.py createsuperuser  # create admin (is_staff)
    python manage.py loaddata sample_data.json
-   python manage.py runserver
+   Run backend server: python manage.py runserver
 
 2. Frontend
    cd frontend
-   npm install
-   npm run dev
+   Install dependencies: npm install
+   Start frontend: npm run dev
    # By default frontend expects backend at http://localhost:8000
 
-Deliverable
-----------
-A zip file containing the full project is included with this message. Unzip and follow README instructions.
-
-Credentials for demo (after you run createsuperuser, you can also use this sample employee created by fixture):
-- admin: admin@example.com / adminpass123 (if created via fixture)
-- employee: employee1@example.com / employeepass
-
-Good luck! If anything breaks when you test locally, tell me what error you see and I'll fix it quickly.
+THANKYOU!
+Contact - sanjanakm31
