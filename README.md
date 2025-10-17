@@ -11,11 +11,11 @@ interface.
 
 Objectives
 --------
-1 Provide a simple yet powerful online dashboard for tracking projects.
-2 Allow Admins to manage and assign projects.
-3 Allow Employees to update project completion and delay remarks.
-4 Replace manual Excel updates with real-time data synchronization.
-5 Enable export of project data in CSV format for reporting.
+- Provide a simple yet powerful online dashboard for tracking projects.
+- Allow Admins to manage and assign projects.
+- Allow Employees to update project completion and delay remarks.
+- Replace manual Excel updates with real-time data synchronization.
+- Enable export of project data in CSV format for reporting.
 
 Technology Stack
 --------
