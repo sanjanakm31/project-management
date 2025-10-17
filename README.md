@@ -43,21 +43,32 @@ Quick start (Linux / WSL / macOS)
 --------------------------------
 1. Backend
    -cd backend
+   
    -Create virtual environment: python3 -m venv venv
+   
    -Activate it: .\venv\Scripts\Activate.ps1
+   
    -Install packages: pip install -r requirements.txt
+   
    -Make migrations: python manage.py makemigrations projects
-   # Configure PostgreSQL in pm_backend/settings.py or set DATABASE_URL env var
+   
+   #Configure PostgreSQL in pm_backend/settings.py or set DATABASE_URL env var
    -Migrate database: python manage.py migrate
+   
    -Create superuser: python manage.py createsuperuser  # create admin (is_staff)
+   
    -python manage.py loaddata sample_data.json
+   
    -Run backend server: python manage.py runserver
 
-2. Frontend
+3. Frontend
    -cd frontend
+   
    -Install dependencies: npm install
+   
    -Start frontend: npm run dev
-   # By default frontend expects backend at http://localhost:8000
+   
+   #By default frontend expects backend at http://localhost:8000
 
 THANKYOU!
 Contact - sanjanakm31
