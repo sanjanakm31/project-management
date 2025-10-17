@@ -1,0 +1,54 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$fake$fakehash", 
+      "last_login": null,
+      "is_superuser": false,
+      "username": "employee1",
+      "first_name": "",
+      "last_name": "",
+      "email": "employee1@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$fake$fakehash",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": 1,
+    "fields": {
+      "employee": 1,
+      "project_name": "Website Revamp",
+      "customer": "Client A",
+      "priority": "High",
+      "quantity": "5 pages",
+      "subtask": "UI Design",
+      "remarks": "Started",
+      "due_date": "2025-10-10",
+      "completion": 60,
+      "delay_remarks": ""
+    }
+  }
+]
